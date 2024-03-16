@@ -120,7 +120,9 @@ Feel free to explore and experiment with different components to understand the 
 
 
 ## Documentation
-- Detailed explanations of the ZNE technique, noise mitigation methods, and extrapolation techniques are provided within the code files.
+- Detailed explanations of the Zero-Noise Extrapolation (ZNE) technique, noise mitigation methods, and extrapolation techniques are provided within the code cells and markdown cells of the Jupyter Notebook "[Zero-Noise Extrapolation Task](notebooks/Zero_Noise_Extrapolation_(ZNE)_Task.ipynb)" available in this repository.
+
+  Users can refer to this notebook for comprehensive explanations and insights into the implementation and workings of the ZNE techniques presented in the repository.
 
 
 ## Example Notebooks
