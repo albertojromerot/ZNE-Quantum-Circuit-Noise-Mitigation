@@ -1,6 +1,23 @@
 # ZNE Quantum Circuit Noise Mitigation
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
+## Table of Contents
+- [Overview](#overview)
+- [Usage](#usage)
+  - [Getting Started](#getting-started)
+  - [Detailed Usage Instructions](#detailed-usage-instructions)
+    - [Noise Model](#noise-model)
+    - [Quantum Circuits](#quantum-circuits)
+    - [Unitary Folding](#unitary-folding)
+    - [Extrapolation Methods](#extrapolation-methods)
+  - [Documentation](#documentation)
+  - [Example Notebooks](#example-notebooks)
+- [License](#license)
+- [Contribution](#contribution)
+- [Code of Conduct](#code-of-conduct)
+- [Authors](#authors)
+- [Acknowledgments](#acknowledgments)
+
 ## Overview
 Explore noise mitigation in quantum circuits using Zero-Noise Extrapolation (ZNE) techniques. This repository provides tools to mitigate noise in quantum circuits, employing depolarizing noise models, unitary folding methods, and various extrapolation techniques for enhanced fidelity and reliability.
 
