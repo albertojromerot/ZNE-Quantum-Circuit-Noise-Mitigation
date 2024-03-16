@@ -215,7 +215,7 @@ By participating in this project, you are expected to adhere to the principles a
 
 
 ## Authors
-- [Alberto Romero Torres](https://github.com/albertojromerot)
+  - [Alberto Romero Torres](https://github.com/albertojromerot)
   - LinkedIn: [Alberto Romero Torres](https://www.linkedin.com/in/alberto-romero-torres/)
   - Email: alberto.zne.projectmaintainer@gmail.com
 
