@@ -1,7 +1,6 @@
 # ZNE Quantum Circuit Noise Mitigation
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-
 ## Overview
 Explore noise mitigation in quantum circuits using Zero-Noise Extrapolation (ZNE) techniques. This repository provides tools to mitigate noise in quantum circuits, employing depolarizing noise models, unitary folding methods, and various extrapolation techniques for enhanced fidelity and reliability.
 
@@ -21,7 +20,7 @@ git clone https://github.com/albertojromerot/ZNE-Quantum-Circuit-Noise-Mitigatio
 
 ### 2. Install dependencies:
 
-Before running the code, ensure that you have Python and pip installed on your system. You can download and install Python from the [Python](https://www.python.org/downloads/) and [pip](https://pip.pypa.io/en/stable/installation/) installed on your system before proceeding with the installation. 
+Before running the code, ensure that you have Python and pip installed on your system. This project supports Python 3.7 and above. You can download and install Python from the [Python](https://www.python.org/downloads/) and [pip](https://pip.pypa.io/en/stable/installation/) installed on your system before proceeding with the installation. 
 
 Next, navigate to the cloned repository directory:
 
@@ -224,7 +223,5 @@ By participating in this project, you are expected to adhere to the principles a
 This project was inspired by the [Zero-Noise Extrapolation (ZNE)](https://mitiq.readthedocs.io/en/stable/guide/zne.html) documentation provided by Mitiq, a quantum error mitigation library. The concept of ZNE and its applications in noise mitigation techniques greatly influenced the development of this repository.
 
 Additionally, we would like to express our gratitude to the [Quantum Open Source Foundation (QOSF)](https://www.qosf.org) for their contributions to the advancement of quantum computing research and open-source initiatives. Their dedication to fostering collaboration and innovation in the quantum computing community has been instrumental in shaping this project.
-
-We extend our thanks to the individuals and organizations who have shared their knowledge, expertise, and resources, contributing to the growth and development of quantum computing technologies worldwide.
 
   
