@@ -1,5 +1,5 @@
 # ZNE Quantum Circuit Noise Mitigation
-
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 
 ## Overview
@@ -21,13 +21,21 @@ git clone https://github.com/albertojromerot/ZNE-Quantum-Circuit-Noise-Mitigatio
 
 ### 2. Install dependencies:
 
-Before running the code, ensure that you have Python and pip installed on your system. You can download and install Python from the [Python](https://www.python.org/downloads/) and [pip](https://pip.pypa.io/en/stable/installation/) installed on your system before proceeding with the installation. Next, navigate to the cloned repository directory and install the required dependencies by running:
+Before running the code, ensure that you have Python and pip installed on your system. You can download and install Python from the [Python](https://www.python.org/downloads/) and [pip](https://pip.pypa.io/en/stable/installation/) installed on your system before proceeding with the installation. 
+
+Next, navigate to the cloned repository directory:
+
+```bash
+cd ZNE-Quantum-Circuit-Noise-Mitigation
+```
+
+Install the required dependencies by running:
 
 ```bash
 pip install -r requirements.txt
 ```
 
-This command will install all necessary Python packages specified in the requirements.txt file.
+This command will install all necessary Python packages specified in the requirements.txt file, including libraries for quantum computing and data analysis.
 
 If you prefer using a virtual environment, you can create and activate one before installing dependencies:
 
@@ -208,11 +216,17 @@ By participating in this project, you are expected to adhere to the principles a
 
 ## Authors
 - [Alberto Romero Torres](https://github.com/albertojromerot)
-- LinkedIn: https://www.linkedin.com/in/alberto-romero-torres/
+  - LinkedIn: [Alberto Romero Torres](https://www.linkedin.com/in/alberto-romero-torres/)
+  - Email: alberto.zne.projectmaintainer@gmail.com
 
   
 
 ## Acknowledgments
-- This project was inspired by the Mitiq documentation on [Zero-Noise Extrapolation](https://mitiq.readthedocs.io/en/stable/guide/zne.html), and the Quantum Open Source Foundation [(QOSF)](https://www.qosf.org)
+
+This project was inspired by the [Zero-Noise Extrapolation (ZNE)](https://mitiq.readthedocs.io/en/stable/guide/zne.html) documentation provided by Mitiq, a quantum error mitigation library. The concept of ZNE and its applications in noise mitigation techniques greatly influenced the development of this repository.
+
+Additionally, we would like to express our gratitude to the [Quantum Open Source Foundation (QOSF)](https://www.qosf.org) for their contributions to the advancement of quantum computing research and open-source initiatives. Their dedication to fostering collaboration and innovation in the quantum computing community has been instrumental in shaping this project.
+
+We extend our thanks to the individuals and organizations who have shared their knowledge, expertise, and resources, contributing to the growth and development of quantum computing technologies worldwide.
 
   
