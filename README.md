@@ -123,6 +123,14 @@ Feel free to explore and experiment with different components to understand the 
 - Detailed explanations of the ZNE technique, noise mitigation methods, and extrapolation techniques are provided within the code files.
 
 
+## Example Notebooks
+
+Explore how to use the ZNE Quantum Circuit Noise Mitigation library with these example notebooks:
+
+- [Zero-Noise Extrapolation Task](notebooks/Zero_Noise_Extrapolation_(ZNE)_Task.ipynb): This notebook demonstrates how to mitigate noise in quantum circuits using the Zero-Noise Extrapolation (ZNE) technique. It provides a step-by-step guide on implementing depolarizing noise models, applying unitary folding methods, and using various extrapolation techniques to estimate the zero-noise limit. The notebook includes example code for creating a simple noise model, generating quantum circuits, applying unitary folding, extrapolating zero noise, and comparing mitigated and unmitigated results. Additionally, it showcases how to visualize extrapolation curves to gain insights into noise mitigation performance. Users can follow along with the provided examples to understand the principles of ZNE and its application in quantum computing.
+
+Feel free to experiment with these notebooks to understand the functionality of the library better.
+
 
 ## License
 This project is licensed under the MIT License, a widely-used open-source license that grants users significant freedoms to use, modify, and distribute the software. By using this repository, you agree to comply with the terms of the license.
@@ -135,18 +143,6 @@ This project is licensed under the MIT License, a widely-used open-source licens
 By using this repository, you agree to comply with the terms of the MIT License.
 
 For detailed information about the MIT License, see the [LICENSE](LICENSE) file.
-
-#### MIT License Text
-
-The MIT License (MIT)
-
-Copyright (c) 2024 Alberto Romero Torres
-
-Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 
 
