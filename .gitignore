@@ -1,7 +1,8 @@
 __pycache__/
-*.py[cod]
+*.pyc
+.env
+.venv
 .ipynb_checkpoints/
-.venv/
-venv/
 .DS_Store
-results/*.csv
+reports/*.html
+/data/synthetic/*.csv

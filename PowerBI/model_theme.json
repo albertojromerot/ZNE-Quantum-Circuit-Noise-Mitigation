@@ -1,0 +1,7 @@
+{
+  "name": "Dark Minimal",
+  "dataColors": ["#5DA5DA", "#FAA43A", "#60BD68", "#F17CB0", "#B2912F", "#B276B2", "#DECF3F", "#F15854"],
+  "background": "#0f1116",
+  "foreground": "#e5e7eb",
+  "tableAccent": "#5DA5DA"
+}
