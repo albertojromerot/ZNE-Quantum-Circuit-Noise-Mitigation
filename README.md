@@ -72,6 +72,34 @@ artificially amplified (via folding). A simple linear fit of
 (noise scale, expectation) pairs is extrapolated back to a noise scale of zero;
 this intercept approximates the ideal, noise-free outcome and helps quantify how
 much mitigation improves over the unmitigated measurement.
+Feel free to explore and experiment with different components to understand the noise mitigation techniques better.
+
+
+
+## Documentation
+- Detailed explanations of the Zero-Noise Extrapolation (ZNE) technique, noise mitigation methods, and extrapolation techniques are provided within the code cells and markdown cells of the Jupyter Notebook "[Zero-Noise Extrapolation Task](notebooks/Zero_Noise_Extrapolation_(ZNE)_Task.ipynb)" available in this repository.
+
+  Users can refer to this notebook for comprehensive explanations and insights into the implementation and workings of the ZNE techniques presented in the repository.
+
+
+## Example Notebooks
+
+Explore how to use the ZNE Quantum Circuit Noise Mitigation library with these example notebooks:
+
+- [Zero-Noise Extrapolation Task](notebooks/Zero_Noise_Extrapolation_(ZNE)_Task.ipynb): This notebook demonstrates how to mitigate noise in quantum circuits using the Zero-Noise Extrapolation (ZNE) technique. It provides a step-by-step guide on implementing depolarizing noise models, applying unitary folding methods, and using various extrapolation techniques to estimate the zero-noise limit. The notebook includes example code for creating a simple noise model, generating quantum circuits, applying unitary folding, extrapolating zero noise, and comparing mitigated and unmitigated results. Additionally, it showcases how to visualize extrapolation curves to gain insights into noise mitigation performance. Users can follow along with the provided examples to understand the principles of ZNE and its application in quantum computing.
+
+Feel free to experiment with these notebooks to understand the functionality of the library better.
+
+### Running the demo notebook without Jupyter
+
+The bundled ZNE notebook only relies on the Python standard library. To regenerate its outputs and the `zne_results.svg` visualization without launching a Jupyter server, run:
+
+```bash
+python notebooks/run_zne_notebook.py
+```
+
+The script executes all code cells in-place, captures stdout into the notebook outputs, and refreshes the SVG chart next to the notebook file.
+
 
 ## License
 This project is licensed under the MIT License. See [LICENSE](LICENSE) for

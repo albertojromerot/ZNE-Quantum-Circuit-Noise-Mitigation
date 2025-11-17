@@ -7,6 +7,7 @@ extrapolated back to the zero-noise limit. The notebook and CLI sweep re-use
 this module alongside :mod:`noise_model` and :mod:`extrapolation_methods` to
 run folded circuits and estimate the probability of measuring ``|0⟩``.
 """
+"""Utility functions for building and running folded single-qubit circuits."""
 from __future__ import annotations
 
 import math
@@ -31,6 +32,8 @@ __all__ = [
 
 def matmul(A: Matrix2, B: Matrix2) -> Matrix2:
     """Matrix multiply two 2x2 matrices."""
+
+def matmul(A: Matrix2, B: Matrix2) -> Matrix2:
     return [[sum(A[i][k] * B[k][j] for k in range(2)) for j in range(2)] for i in range(2)]
 
 
@@ -74,6 +77,7 @@ BASE_SEQUENCE: Tuple[LabeledGate, ...] = (
 
 def fold_sequence(sequence: Sequence[LabeledGate], factor: int) -> List[LabeledGate]:
     """Repeat a labeled gate ``sequence`` ``factor`` times for folding."""
+    """Repeat a labeled gate sequence ``factor`` times for unitary folding."""
     if factor < 1:
         raise ValueError("fold factor must be at least 1")
     return [gate for _ in range(factor) for gate in sequence]
@@ -92,6 +96,16 @@ def run_folded_circuit(
     Returns:
         Density matrix after applying all folded gates and depolarizing noise.
     """
+    Execute a folded single-qubit circuit with depolarizing noise.
+
+    Args:
+        base_error: The depolarizing probability assigned per gate in the base circuit.
+        fold_factor: How many times to repeat the base sequence.
+        base_sequence: Optional override for the base gate sequence.
+
+    Returns:
+        The final density matrix after all gates and noise are applied.
+    """
     if fold_factor < 1:
         raise ValueError("fold factor must be at least 1")
 
@@ -108,4 +122,5 @@ def run_folded_circuit(
 
 def expectation_p0(rho: Matrix2) -> float:
     """Return the probability of measuring ``|0⟩`` from a density matrix."""
+    """Return the probability of measuring ``|0>`` from a density matrix."""
     return float(rho[0][0].real)

@@ -25,6 +25,13 @@ def chdir(path: Path) -> Iterator[None]:
     finally:
         os.chdir(original)
 
+import contextlib
+import io
+import json
+from pathlib import Path
+
+
+"""Utility to execute and refresh the ZNE demo notebook without Jupyter."""
 
 def run_notebook(notebook_path: Path) -> None:
     notebook_path = notebook_path.resolve()
@@ -36,6 +43,7 @@ def run_notebook(notebook_path: Path) -> None:
 
     with contextlib.ExitStack() as stack:
         stack.enter_context(chdir(notebook_dir))
+        stack.enter_context(contextlib.chdir(notebook_dir))
         # Allow the notebook to import local helpers from the repository root.
         globals_ns.setdefault("__path__", [])
         globals_ns.setdefault("__file__", notebook_path.name)
