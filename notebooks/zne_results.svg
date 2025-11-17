@@ -1,0 +1,30 @@
+<svg xmlns='http://www.w3.org/2000/svg' width='520' height='320' role='img'>
+<style>text{font-family:Arial, sans-serif;font-size:12px;} .tick{stroke:#555;stroke-width:1;} .curve{stroke:#1976d2;stroke-width:2;fill:none;} .scatter{fill:#d81b60;}</style>
+<rect x='0' y='0' width='520' height='320' fill='white' stroke='none' />
+<line x1='60' y1='260' x2='460' y2='260' class='tick' />
+<line x1='60' y1='60' x2='60' y2='260' class='tick' />
+<text x='260.0' y='300' text-anchor='middle'>Noise scaling factor (folds)</text>
+<text x='20' y='160.0' transform='rotate(-90 20 160.0)' text-anchor='middle'>P(|0⟩)</text>
+<line x1='140.0' y1='260' x2='140.0' y2='265' class='tick' />
+<text x='140.0' y='280' text-anchor='middle'>1</text>
+<line x1='300.0' y1='260' x2='300.0' y2='265' class='tick' />
+<text x='300.0' y='280' text-anchor='middle'>3</text>
+<line x1='460.0' y1='260' x2='460.0' y2='265' class='tick' />
+<text x='460.0' y='280' text-anchor='middle'>5</text>
+<line x1='55' y1='260.0' x2='60' y2='260.0' class='tick' />
+<text x='50' y='264.0' text-anchor='end'>0.52</text>
+<line x1='55' y1='210.0' x2='60' y2='210.0' class='tick' />
+<text x='50' y='214.0' text-anchor='end'>0.63</text>
+<line x1='55' y1='160.0' x2='60' y2='160.0' class='tick' />
+<text x='50' y='164.0' text-anchor='end'>0.75</text>
+<line x1='55' y1='110.0' x2='60' y2='110.0' class='tick' />
+<text x='50' y='114.0' text-anchor='end'>0.87</text>
+<line x1='55' y1='60.0' x2='60' y2='60.0' class='tick' />
+<text x='50' y='64.0' text-anchor='end'>0.98</text>
+<line x1='60.0' y1='60.0' x2='460.0' y2='272.55259828209773' class='curve' stroke='#1976d2' />
+<circle cx='140.0' cy='89.95792137432181' r='4' class='scatter' />
+<circle cx='300.0' cy='212.6367555334542' r='4' class='scatter' />
+<circle cx='460.0' cy='260.0' r='4' class='scatter' />
+<line x1='60.0' y1='60.0' x2='460.0' y2='60.0' stroke='#2e7d32' stroke-dasharray='6 4' />
+<text x='65.0' y='52.0' fill='#2e7d32'>Zero-noise estimate: 0.9818</text>
+</svg>

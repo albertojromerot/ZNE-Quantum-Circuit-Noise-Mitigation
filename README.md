@@ -149,6 +149,16 @@ Explore how to use the ZNE Quantum Circuit Noise Mitigation library with these e
 
 Feel free to experiment with these notebooks to understand the functionality of the library better.
 
+### Running the demo notebook without Jupyter
+
+The bundled ZNE notebook only relies on the Python standard library. To regenerate its outputs and the `zne_results.svg` visualization without launching a Jupyter server, run:
+
+```bash
+python notebooks/run_zne_notebook.py
+```
+
+The script executes all code cells in-place, captures stdout into the notebook outputs, and refreshes the SVG chart next to the notebook file.
+
 
 ## License
 This project is licensed under the MIT License, a widely-used open-source license that grants users significant freedoms to use, modify, and distribute the software. By using this repository, you agree to comply with the terms of the license.
