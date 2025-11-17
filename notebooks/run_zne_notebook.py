@@ -1,3 +1,30 @@
+"""Headless execution helper for the ZNE demo notebook.
+
+This script runs the bundled ZNE notebook from the command line, updating
+all code cell outputs and regenerating the ``zne_results.svg`` chart. It is
+compatible with Python 3.7+ and assumes execution from the repository root:
+``python notebooks/run_zne_notebook.py``.
+"""
+from __future__ import annotations
+
+import contextlib
+import io
+import json
+import os
+from pathlib import Path
+from typing import Iterator
+
+
+@contextlib.contextmanager
+def chdir(path: Path) -> Iterator[None]:
+    """Temporarily change the working directory (Python 3.7 compatible)."""
+    original = os.getcwd()
+    os.chdir(path)
+    try:
+        yield
+    finally:
+        os.chdir(original)
+
 import contextlib
 import io
 import json
@@ -15,6 +42,7 @@ def run_notebook(notebook_path: Path) -> None:
     exec_count = 1
 
     with contextlib.ExitStack() as stack:
+        stack.enter_context(chdir(notebook_dir))
         stack.enter_context(contextlib.chdir(notebook_dir))
         # Allow the notebook to import local helpers from the repository root.
         globals_ns.setdefault("__path__", [])
